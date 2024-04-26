@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+body{
+	font-family: 'lato', sans-serif;
+	color: black;
+	margin: 0;
+}
+#home-hero h1{
+	color: white;
+	font-size: 50px;
+	text-shadow: 2px 2px 2px black;
+	text-align: center;
+	padding: 15px 0;
+	margin: 0;
+}
+nav ul{
+	padding-top: 13px;
+	list-style-type: none;
+	text-align: center;
+}
+nav li{
+	display: inline;
+}
+nav a{
+	text-decoration: none;
+	padding-right: 10px;
+}
+nav a:link{
+	color: white;
+}
+nav a:visited{
+	color: white;
+}
+nav a:hover{
+	color: lightblue;
+}
+nav a:active{
+	color: black;
+}
+footer a:link{
+	color: black;
+}
+footer a:visited{
+	color: black;
+}
+footer a:hover{
+	color: lightblue;
+}
+footer a:active{
+	color: white;
+}
+header h1{
+	text-align: center;
+	font-size: 4em;
+	color: white;
+	margin: 0;
+	padding: 20px;
+}
+header{
+	background-color: white;
+}
+.logo{
+	padding-left: 40px;
+	margin: 0 auto;
+	display:block;
+}
+
+a:link{
+color: white;
+}
+a:visited{
+color: white;
+}
+a:hover{
+color: lightblue;
+}
+a:active{
+color: black;
+}
+nav{
+	background-color: #0b0b33;
+	border-bottom: 2px white solid;
+	padding: 5px;
+}
+main{
+	max-width: 1000px;
+	margin: 40px auto;
+}
+footer{
+	text-align: center;
+	border-top: 1px solid gray;
+	padding: 10px;
+	background-image: url(images/blue.png);
+	clear: both;
+}
+#home-hero{
+	background-image: url(images/blue.png);
+	height: 100px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.myphoto{
+	float: left;
+	max-width: 50%;
+	height: auto;
+	padding: 30px;
+}
+h1, h2{
+	color: #14112c;
+}
+h2{
+	border-bottom: 3px solid #14112c;
+}
+.fa{
+	font-size: 3em;
+}
+.gallery .preview{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+}
+
+.gallery .gallery-thumbnails img {
+    width: 100px;
+    height: 75px;
+    margin: 3px 10px 10px 0;
+}
+
+.gallery .gallery-thumbnails img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.gallery .preview img#preview {
+    padding: 1px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto !important;
+    display: block !important;
+}
+
+/* CSS Adjustments for Tablets */
+@media only screen and (max-width: 1024px) {
+	h1{
+		font-size: 1.8em;
+	}
+}
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px) {
+	h1{
+		font-size: 1.5em;
+	}
+}
