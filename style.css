@@ -6,6 +6,18 @@ body{
 	color: black;
 	margin: 0;
 }
+/*my resume banner*/
+.about-me{
+	background-color: #0b0b33; 
+	padding: 30px;
+}
+.about-me h2{
+	color:  white;
+	border-bottom: 3px white solid;
+}
+.about-me p{
+	color: white;
+}
 #home-hero h1{
 	color: white;
 	font-size: 50px;
@@ -36,19 +48,51 @@ nav a:hover{
 	color: lightblue;
 }
 nav a:active{
-	color: black;
+	color: #0b0b33;
 }
 footer a:link{
-	color: black;
+	color: #0b0b33;
 }
 footer a:visited{
-	color: black;
+	color: #0b0b33;
 }
 footer a:hover{
 	color: lightblue;
 }
 footer a:active{
 	color: white;
+}
+main a:link{
+	color: #0b0b33;
+}
+main a:visited{
+	color: #0b0b33;
+}
+main a:hover{
+	color: lightblue;
+}
+main a:active{
+	color: white;
+}
+main .fa{
+	color: #0b0b33;
+	font-size: 5em;
+}
+.big3 .fa{
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	padding-top: 20px;
+}
+.big3 p{
+	text-align: center;
+}
+.big2{
+	border-top: 10px #0b0b33 solid;
+	border-bottom: 10px #0b0b33 solid;
+}
+.big4{
+	border-top: 10px #0b0b33 solid;
 }
 header h1{
 	text-align: center;
@@ -110,7 +154,7 @@ h1, h2{
 	color: #14112c;
 }
 h2{
-	border-bottom: 3px solid #14112c;
+	border-bottom: 3px solid #0b0b33;
 }
 .fa{
 	font-size: 3em;
@@ -139,6 +183,19 @@ h2{
     margin: 0 auto !important;
     display: block !important;
 }
+.mobile{
+	display:none;
+}
+@media only screen and (max-width: 768px){
+.desktop{
+		display:none;
+	}
+.mobile{
+		display: block;
+		touch-action: manipulation;
+	}
+}
+
 
 /* CSS Adjustments for Tablets */
 @media only screen and (max-width: 1024px) {

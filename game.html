@@ -12,9 +12,13 @@
       canvas{
       border: 5px solid black;
       background-image: url(images/pixel.png);
+      margin: 0 auto;
+      display: block;
       }
       button{
       	background-color: lightblue;
+      	margin: 0 auto;
+      	display: block;
       }
 
   	</style>
@@ -37,15 +41,28 @@
 	<main>
 		<p>I made this game for my Web Fundamentals class at Saint Paul College, and changed the movement speed of the black square, the color of the obsticles, added a background image, added a play again button, and changed the color of the buttons.</p>
 		<div id="game" ></div>
-		<div class="game-controls">
-	    <button class="myButton" onmousedown="accelerate(-1)" onmouseup="accelerate(0.25)">FLY UP</button>
-	    <a href="" ><button class="myButton">PLAY AGAIN</button></a>
+		<!computer attributes>
+		<div class="game-controls desktop">
+			<button class="myButton" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">FLAP WINGS</button>
+			<a href="" ><button class="myButton">PLAY AGAIN</button></a>
+		</div>
+		<!mobile attributes>
+		<div class="game-controls mobile">
+			<button class="myButton" ontouchstart="accelerate(-0.2)" ontouchend="accelerate(0.05)">FLAP WINGS</button>
+			<a href="" ><button class="myButton">PLAY AGAIN</button></a>
 		</div>
 			<script>
-		      var myGamePiece;
-		      var myObstacles = [];
-		      var myScore;
-		      
+		      	var myGamePiece;
+		     	var myObstacles = [];
+		      	var myScore;
+		      	var canvasWidth = 640;
+				var canvasHeight = 360;
+				/*Test to see if I have a screen less than 768 pixels and if so, change the canvas size */
+				if (window.innerWidth < 768){
+				canvasWidth = 300;
+				canvasHeight= 300;
+				}
+
 		      function startGame() {
 		          myGamePiece = new component(30, 30, "black", 10, 120);
 		          myGamePiece.gravity = 0.05;
@@ -56,8 +73,8 @@
 		      var myGameArea = {
 		          canvas : document.createElement("canvas"),
 		          start : function() {
-		              this.canvas.width = 640;
-		              this.canvas.height = 360;
+		              this.canvas.width = canvasWidth;
+		              this.canvas.height = canvasHeight ;
 		              this.context = this.canvas.getContext("2d");
 		              var myGame = document.getElementById("game");
 		              myGame.insertBefore(this.canvas, myGame.childNodes[0]);        

@@ -11,6 +11,7 @@
 </head>
 <body>
 	<header>
+		<!logo for website>
 		<img src="images/logo.png" alt="logo" height="80" width="300" class="img-fluid logo">
 	</header>
 	<nav>
@@ -25,34 +26,59 @@
 		<h1>Welcome to my portfolio</h1>
 	</div>
 	<main>
-		<p><img src="images/myphoto.jpeg" height="300" width="300" class="myphoto">
-		My name is Donavan Yang and I study computer graphics and visualization at Saint Paul College in St. Paul, Minnesota. My planned graduation date is May 2025 with the Computer Graphics & Visualization Associates. I made this website as a portfolio of my skills developing websites.</p>
-		<p>I have taken the following classes at Saint Paul College:</p>
-		<li>Web Fundamentals, where I learned HTML and CSS</li>
-		<li>digital video 1 & 2</li>
-		<li>composition 1</li>
-		<p>I plan on taking the Adobe classes in order to obtain my certification in PhotoShop and Illustrator.</p>
-		<p>My hobbies include video gaming, digital art, and playing volleyball.</p>
-		
-		<p>A hobby I have is 3D art on Blender and on a mobile app named Nomad Sculpt. these are some rendered pictures of my 3D models I have made for fun</p>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="images/myphoto.jpeg" alt="myphoto" height="300" width="300" class="img-fluid">
+				</div>
+				<div class="col-sm-8">
+					<p>My name is Donavan Yang and I study computer graphics and visualization at Saint Paul College in St. Paul, Minnesota. My planned graduation date is May 2025 with the Computer Graphics & Visualization Associates. I made this website as a portfolio of my skills developing websites.</p>
+					<p>I have taken the following classes at Saint Paul College:</p>
+					<li>Web Fundamentals, where I learned HTML and CSS</li>
+					<li>digital video 1 & 2</li>
+					<li>composition 1</li>
+					<p>I plan on taking the Adobe classes in order to obtain my certification in PhotoShop and Illustrator.</p>
+					<p>My hobbies include video gaming, digital art, and playing volleyball.</p>
+				</div>
+			</div>
+			<div class="row big3">
+	          	<div class="col-sm-4">
+	                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+	                <p><a href="resume.html">Checkout my resume that include my experiences.</a></p>
+	              </div>
+	          	<div class="col-sm-4">
+	                <i class="fa fa-address-book-o" aria-hidden="true"></i>
+	                <p><a href="portfolio.html">Take a look at my potfolio, and check out website pages I have designed myself.</a></p>
+	                </div>
+	            <div class="col-sm-4">
+	                <i class="fa fa-gamepad" aria-hidden="true"></i>
+	                <p><a href="game.html">Javascript Game</a></p>
+	                </div>
+	            </div>
+	        </div>
+	    <div class="row">
+	    	<div class="col-sm-12">
+				<p>A hobby I have is 3D art on Blender and on a mobile app named Nomad Sculpt. these are some rendered pictures of my 3D models I have made for fun</p>
+			</div>
+		</div>
 		<div class="container-fluid">
 			<div class="row">
           		<div class="col-sm-12">
 					<div class="gallery">
     					<div class="preview">
-        				<img id="preview" src="images/dumbling.png" style="display:block;margin:0 auto;" alt=""  height="600" width="800"/>
+        				<img id="preview" src="images/neon-city-blue.png" style="display:block;margin:0 auto;" alt=""  height="600" width="800"/>
    					</div>
 						<div class="gallery-thumbnails" style="margin:0 auto;text-align:center">
-        				<img onclick="document.getElementById('preview').src=document.getElementById('img1').src" id="img1" src="images/dumbling.png" alt="" />
-        				<img onclick="document.getElementById('preview').src = document.getElementById('img2').src;" id="img2" src="images/japanese-temple.png" alt="" />
-        				<img onclick="document.getElementById('preview').src = document.getElementById('img3').src;" id="img3" src="images/practice-project.png" alt="" />
-        				<img onclick="document.getElementById('preview').src = document.getElementById('img4').src;" id="img4" src="images/neon-city-blue.png" alt="" />
-        				<img onclick="document.getElementById('preview').src = document.getElementById('img5').src;" id="img5" src="images/neon-city-pink.png" alt="" />
-        				<img onclick="document.getElementById('preview').src= document.getElementById('img6').src;" id="img6" src="images/fox.png" alt=""  />
-        				<img onclick="document.getElementById('preview').src = document.getElementById('img7').src;" id="img7" src="images/heart.png" alt="" />
-        				<img onclick="document.getElementById('preview').src = document.getElementById('img8').src;" id="img8" src="images/ninja-turtles.png" alt="" />
-        				<img onclick="document.getElementById('preview').src = document.getElementById('img9').src;" id="img9" src="images/portal-orange.png" alt="" />
-        				<img onclick="document.getElementById('preview').src = document.getElementById('img10').src;" id="img10" src="images/portal.png" alt="" />
+        				<img onclick="document.getElementById('preview').src=document.getElementById('img1').src" id="img1" src="images/dumbling.png" alt="art-image" />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img2').src;" id="img2" src="images/japanese-temple.png" alt="art-image" />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img3').src;" id="img3" src="images/practice-project.png" alt="art-image" />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img4').src;" id="img4" src="images/neon-city-blue.png" alt="art-image" />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img5').src;" id="img5" src="images/neon-city-pink.png" alt="art-image" />
+        				<img onclick="document.getElementById('preview').src= document.getElementById('img6').src;" id="img6" src="images/fox.png" alt="art-image"  />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img7').src;" id="img7" src="images/heart.png" alt="art-image" />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img8').src;" id="img8" src="images/ninja-turtles.png" alt="art-image" />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img9').src;" id="img9" src="images/portal-orange.png" alt="art-image" />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img10').src;" id="img10" src="images/portal.png" alt="art-image" />
     					</div>
     				</div>
     			</div>
